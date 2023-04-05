@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Advertising-website/static/css/main.63e3d8e9.css",
-    "main.js": "/Advertising-website/static/js/main.a591c5a0.js",
+    "main.css": "/Advertising-website/static/css/main.1bce5f22.css",
+    "main.js": "/Advertising-website/static/js/main.3826c0ce.js",
     "static/media/video.mp4": "/Advertising-website/static/media/video.adb713d87d8524bf549e.mp4",
     "static/media/main-slider-1-1.jpg": "/Advertising-website/static/media/main-slider-1-1.37f21c4dc4f118ebfa74.jpg",
     "static/media/main-slider-1-2.jpg": "/Advertising-website/static/media/main-slider-1-2.3df6d32f257d653f9c82.jpg",
@@ -20,11 +20,11 @@
     "static/media/volkswagen-dark.svg": "/Advertising-website/static/media/volkswagen-dark.acf3a11365e0977cfd03e5cf3f939107.svg",
     "static/media/box-dark.svg": "/Advertising-website/static/media/box-dark.51e72d73f82eb149957bc4c07e1af330.svg",
     "index.html": "/Advertising-website/index.html",
-    "main.63e3d8e9.css.map": "/Advertising-website/static/css/main.63e3d8e9.css.map",
-    "main.a591c5a0.js.map": "/Advertising-website/static/js/main.a591c5a0.js.map"
+    "main.1bce5f22.css.map": "/Advertising-website/static/css/main.1bce5f22.css.map",
+    "main.3826c0ce.js.map": "/Advertising-website/static/js/main.3826c0ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.63e3d8e9.css",
-    "static/js/main.a591c5a0.js"
+    "static/css/main.1bce5f22.css",
+    "static/js/main.3826c0ce.js"
   ]
 }
