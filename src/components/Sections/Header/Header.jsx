@@ -72,10 +72,10 @@ const Header = () => {
         <div className="main-menu__wrapper-inner">
           <div className="main-menu__right">
             <div className="logo" data-aos="fade-left" data-aos-delay="150">
-              <a href="/">
+              <Link to="/">
                 {/* <img src={require("../../assets/img/logo.png")} alt="Logo" /> */}
                 الخبراء
-              </a>
+              </Link>
             </div>
           </div>
           <ul className={isActive ? "main-menu active" : "main-menu"}>

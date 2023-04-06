@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const footerInfoData = [
@@ -69,10 +70,10 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-logo">
             <h1 className="header-footer-section header-footer-logo">
-              <a href="/">
+              <Link to="/">
                 {/* <img src={require("../../assets/img/logo.png")} alt="Logo" /> */}
                 الخبراء
-              </a>
+              </Link>
             </h1>
             <div className="footer-address">
               <h3 className="footer-address-title">
