@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Advertising-website/static/css/main.1bce5f22.css",
+    "main.css": "/Advertising-website/static/css/main.1a47e697.css",
     "main.js": "/Advertising-website/static/js/main.3826c0ce.js",
     "static/media/video.mp4": "/Advertising-website/static/media/video.adb713d87d8524bf549e.mp4",
     "static/media/main-slider-1-1.jpg": "/Advertising-website/static/media/main-slider-1-1.37f21c4dc4f118ebfa74.jpg",
@@ -20,11 +20,11 @@
     "static/media/volkswagen-dark.svg": "/Advertising-website/static/media/volkswagen-dark.acf3a11365e0977cfd03e5cf3f939107.svg",
     "static/media/box-dark.svg": "/Advertising-website/static/media/box-dark.51e72d73f82eb149957bc4c07e1af330.svg",
     "index.html": "/Advertising-website/index.html",
-    "main.1bce5f22.css.map": "/Advertising-website/static/css/main.1bce5f22.css.map",
+    "main.1a47e697.css.map": "/Advertising-website/static/css/main.1a47e697.css.map",
     "main.3826c0ce.js.map": "/Advertising-website/static/js/main.3826c0ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bce5f22.css",
+    "static/css/main.1a47e697.css",
     "static/js/main.3826c0ce.js"
   ]
 }
