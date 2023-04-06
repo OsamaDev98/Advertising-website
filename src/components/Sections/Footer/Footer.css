@@ -90,3 +90,8 @@ footer .footer-info-list li {
 footer .footer-info-list li:hover {
   color: var(--red-color);
 }
+@media screen and (max-width: 767px) {
+  footer {
+    padding-top: 3rem;
+  }
+}
