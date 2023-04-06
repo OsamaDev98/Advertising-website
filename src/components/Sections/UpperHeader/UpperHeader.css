@@ -1,0 +1,57 @@
+.upper-header .upper-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.upper-header .upper-header-container .right-upper-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.upper-header .upper-header-container .upper-mail,
+.upper-header .upper-header-container .upper-address {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.upper-header .upper-header-container .right-upper-header-icon {
+  color: var(--red-color);
+  font-size: 1.2rem;
+}
+.upper-header .upper-header-container .upper-mail > span,
+.upper-header .upper-header-container .upper-address > span {
+  font-size: 17px;
+  cursor: pointer;
+  transition: var(--trans);
+  -webkit-transition: var(--trans);
+  -moz-transition: var(--trans);
+  -ms-transition: var(--trans);
+  -o-transition: var(--trans);
+}
+.upper-header .upper-header-container .upper-mail > span:hover,
+.upper-header .upper-header-container .upper-address > span:hover {
+  color: var(--red-color);
+}
+.upper-header .left-upper-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.upper-header .upper-header-icon {
+  cursor: pointer;
+  transition: var(--trans);
+  -webkit-transition: var(--trans);
+  -moz-transition: var(--trans);
+  -ms-transition: var(--trans);
+  -o-transition: var(--trans);
+}
+.upper-header .upper-header-icon:hover {
+  color: var(--red-color);
+}
+@media screen and (max-width: 992px) {
+  .upper-header {
+    display: none;
+  }
+}

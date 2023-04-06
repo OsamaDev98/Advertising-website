@@ -1,0 +1,188 @@
+.about-section {
+  width: 100%;
+  height: calc(100vh - 99px);
+  position: relative;
+  overflow: hidden;
+}
+.about-section .about-container {
+  display: flex;
+  gap: 6rem;
+  height: 100%;
+}
+.about-section .about-right .about-title {
+  color: #000;
+  font-size: 50px;
+  line-height: 62px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.about-section .about-right .about-text {
+  color: #000;
+  opacity: 0.8;
+  font-size: 20px;
+  line-height: 2rem;
+  margin: 2rem 0;
+}
+.about-section .about-right .about-user {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin: 3rem 0;
+}
+.about-section .about-right .about-user .about-user-img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.about-section .about-right .about-user .about-user-content {
+  max-width: 300px;
+  color: #000;
+  opacity: 0.8;
+  font-size: 20px;
+  line-height: 2rem;
+}
+.about-section .about-right .about-clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-section .about-right .about-clients .clients-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--red-color);
+  display: flex;
+  gap: 1rem;
+}
+.about-section .about-right .about-points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about-section .about-right .about-points .about-point {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.about-section .about-right .about-points .about-point-icon {
+  font-size: 1.5rem;
+}
+.about-section .about-right .about-points .about-point-text {
+  color: #000;
+  font-size: 20px;
+  line-height: 2rem;
+}
+.about-section .about-right .about-clients-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  background: var(--bg-gray-color);
+  padding: 40px 2rem;
+}
+.about-section .about-left {
+  position: relative;
+}
+.about-section .about-left img {
+  height: 100%;
+}
+.about-section .about-left .about-shape {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+  position: absolute;
+  bottom: 0;
+  right: 35px;
+  height: 187px;
+  width: 268px;
+  background-color: var(--red-color);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.about-section .about-left .about-experience {
+  position: absolute;
+  bottom: 35px;
+  right: 74px;
+  left: -53px;
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 27px 0px rgba(191, 191, 191, 0.35);
+  z-index: 1;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.about-section .about-left .about-experience .about-experience-shape {
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+  z-index: -1;
+  scale: 3.5;
+}
+.about-section .about-left .about-experience .about-experience-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 26px 1rem 26px;
+  overflow: hidden;
+  z-index: 1;
+}
+.about-section .about-left .about-experience .about-experience-text > h3 {
+  font-size: 22px;
+}
+.about-section .about-left .about-experience .about-btn {
+  background: var(--bg-gray-color);
+}
+@media screen and (max-width: 1299px) {
+  .about-section {
+    height: auto;
+  }
+  .about-section .about-container {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .about-section .about-left .about-shape {
+    bottom: 3px;
+  }
+  .about-section .about-right {
+    max-width: 650px;
+    margin: 50px auto 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .about-section .about-right {
+    text-align: center;
+  }
+  .about-section .about-right .about-user {
+    flex-direction: column;
+  }
+  .about-section .about-right .about-clients {
+    flex-direction: column;
+  }
+  .about-section .about-right .about-clients-numbers {
+    margin-top: 3rem;
+  }
+  .about-section .about-left .about-shape {
+    display: none;
+  }
+  .about-section .about-left .about-experience {
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .about-section .about-left .about-experience .about-experience-content {
+    flex-wrap: wrap;
+  }
+  .about-section .about-left {
+    max-width: 500px;
+  }
+  .about-section .about-left img {
+    width: 100%;
+  }
+}

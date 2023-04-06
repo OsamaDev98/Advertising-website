@@ -1,0 +1,92 @@
+footer {
+  position: relative;
+  background: var(--bg-gray-color);
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  overflow: hidden;
+}
+footer .footer-container {
+  width: 100%;
+}
+footer .footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+footer .header-footer-section {
+  margin-bottom: 3rem;
+}
+footer .header-footer-logo a {
+  font-family: "Noto Nastaliq Urdu", serif;
+  color: var(--red-color);
+  font-weight: 700;
+  font-size: 2rem;
+}
+footer .footer-logo .footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .footer-logo .footer-address .address,
+footer .footer-logo .footer-address .mobile {
+  display: flex;
+  gap: 1rem;
+  font-size: 22px;
+}
+footer .footer-logo .footer-address .address .address-icon,
+footer .footer-logo .footer-address .mobile .mobile-icon {
+  color: var(--red-color);
+}
+footer .footer-logo .footer-address .address p,
+footer .footer-logo .footer-address .mobile p {
+  color: var(--text-gray-color);
+  font-size: 18px;
+  max-width: 200px;
+  line-height: 1.8rem;
+  transition: var(--trans);
+  -webkit-transition: var(--trans);
+  -moz-transition: var(--trans);
+  -ms-transition: var(--trans);
+  -o-transition: var(--trans);
+  cursor: pointer;
+}
+footer .footer-logo .footer-address .address p:hover,
+footer .footer-logo .footer-address .mobile p:hover {
+  color: var(--red-color);
+}
+footer .copyright {
+  text-align: center;
+  border-top: 1px solid #000;
+  padding: 3rem 0;
+}
+footer .copyright p {
+  color: var(--text-gray-color);
+  font-size: 22px;
+}
+footer .copyright p span {
+  color: var(--red-color);
+}
+footer .footer-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 20px;
+  color: var(--text-gray-color);
+}
+footer .footer-info-list li {
+  width: fit-content;
+  transition: var(--trans);
+  -webkit-transition: var(--trans);
+  -moz-transition: var(--trans);
+  -ms-transition: var(--trans);
+  -o-transition: var(--trans);
+  cursor: pointer;
+}
+footer .footer-info-list li:hover {
+  color: var(--red-color);
+}

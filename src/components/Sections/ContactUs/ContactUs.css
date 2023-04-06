@@ -1,0 +1,67 @@
+.contact-section {
+  margin-bottom: -10rem;
+}
+.contact-section .contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 0px 24px 0px rgba(178, 185, 198, 0.35);
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 60px 2rem;
+}
+.contact-section .contact-form form {
+  position: relative;
+  width: 80%;
+}
+.contact-section .contact-form .text-contact {
+  width: 100%;
+  background-color: var(--bg-gray-color);
+  font-size: 22px;
+  height: 4rem;
+  padding-right: 30px;
+}
+.contact-section .contact-form .contact-btn {
+  width: 66px;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--red-color);
+  cursor: pointer;
+}
+.contact-section .contact-form .contact-btn-icon {
+  height: auto;
+  width: auto;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2rem;
+  line-height: inherit;
+  text-align: center;
+  margin-left: 0;
+  padding-right: 0;
+}
+@media screen and (max-width: 767px) {
+  .contact-section {
+    margin-bottom: 0;
+  }
+  .contact-section .contact-form form {
+    width: 100%;
+  }
+}
