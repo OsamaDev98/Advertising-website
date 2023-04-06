@@ -17,13 +17,14 @@ const App = () => {
   return (
     <div className="App">
       {/* <Home /> */}
-      <Router>
+      <Router basename="/Advertising-website">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/portfolios" element={<PortfoliosPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/*" element={<h1>Page Not Found</h1>} />
         </Routes>
       </Router>
     </div>
