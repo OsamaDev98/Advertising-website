@@ -135,7 +135,7 @@
   font-size: 22px;
 }
 .about-section .about-left .about-experience .about-btn {
-  background: var(--bg-gray-color);
+  background: var(--red-color);
 }
 @media screen and (max-width: 1299px) {
   .about-section {

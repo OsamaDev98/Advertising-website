@@ -1,13 +1,8 @@
 import React, { useEffect } from "react";
 import { BsCheck2Circle } from "react-icons/bs";
 import "./About.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const About = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   const aboutData = [
     {
       id: 0,
@@ -29,11 +24,7 @@ const About = () => {
   return (
     <section className="section about-section" id="about">
       <div className="about-container container">
-        <div
-          className="about-left"
-          data-aos="fade-right"
-          data-aos-delay="150"
-        >
+        <div className="about-left" data-aos="fade-right" data-aos-delay="150">
           <img
             className="about-user-img"
             src={require("../../assets/img/portfolio-1.jpg")}

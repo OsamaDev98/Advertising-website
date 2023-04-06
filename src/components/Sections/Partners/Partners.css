@@ -4,9 +4,15 @@
 .partners-section .partners-icons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: center;
+  column-gap: 3rem;
+  row-gap: 4rem;
   flex-wrap: wrap;
+}
+.partners-section .partners-icons li img {
+  max-height: 100px;
+  max-width: 190px;
+  cursor: pointer;
 }
 @media screen and (max-width: 550px) {
   .partners-section .partners-icons {

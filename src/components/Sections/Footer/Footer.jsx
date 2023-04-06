@@ -1,6 +1,11 @@
 import React from "react";
-import { FaMapMarkerAlt } from "react-icons/fa";
-import { AiFillPhone } from "react-icons/ai";
+import {
+  FaFacebookF,
+  FaPinterestP,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
+import { BsTwitter } from "react-icons/bs";
 import "./Footer.css";
 
 const Footer = () => {
@@ -24,6 +29,24 @@ const Footer = () => {
     {
       id: 5,
       title: "التسعير والخطط",
+    },
+  ];
+  const footerImportantData = [
+    {
+      id: 1,
+      title: "الاتفاقية",
+    },
+    {
+      id: 2,
+      title: "اتفاقية الدعم",
+    },
+    {
+      id: 3,
+      title: "شروط وقواعد الاعلانات",
+    },
+    {
+      id: 4,
+      title: "المعلومات القانوينة",
     },
   ];
   const footerTermsData = [
@@ -52,19 +75,19 @@ const Footer = () => {
               </a>
             </h1>
             <div className="footer-address">
-              <div className="address">
-                <FaMapMarkerAlt className="address-icon" />
-                <p>
-                  101 ميريت 5 ، البرج الشمالي 14851 نيويورك ، الولايات المتحدة
-                  الأمريكية
-                </p>
-              </div>
-              <div className="mobile">
-                <AiFillPhone className="mobile-icon" />
-                <div className="mobile-numbers">
-                  <p>02 92921621</p>
-                  <p>+088 11 22 00 77</p>
-                </div>
+              <h3 className="footer-address-title">
+                الخبير للدعايا والاعلانات الرقمية
+              </h3>
+              <p className="footer-address-text">
+                نعمل فى الوكالة جاهدين لإنتاج افضل الاعمال التى تليق بعملائنا
+                لان عملائنا يستحقون ذلك .
+              </p>
+              <div className="footer-address-icons">
+                <FaFacebookF className="footer-address-icon" />
+                <FaLinkedinIn className="footer-address-icon" />
+                <BsTwitter className="footer-address-icon" />
+                <FaInstagram className="footer-address-icon" />
+                <FaPinterestP className="footer-address-icon" />
               </div>
             </div>
           </div>
@@ -72,6 +95,14 @@ const Footer = () => {
             <h1 className="header-footer-section">معلومات عنا</h1>
             <ul className="footer-info-list">
               {footerInfoData?.map((item) => (
+                <li key={item.id}>{item.title}</li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h1 className="header-footer-section">روابط تهمك</h1>
+            <ul className="footer-info-list">
+              {footerImportantData?.map((item) => (
                 <li key={item.id}>{item.title}</li>
               ))}
             </ul>
@@ -85,11 +116,11 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="copyright">
-          <p>
-            جميع الحقوق محفوظة <span>&copy;osama</span>
-          </p>
-        </div>
+      </div>
+      <div className="copyright">
+        <p>
+          جميع الحقوق محفوظة <span>&copy;الخبير</span>
+        </p>
       </div>
     </footer>
   );

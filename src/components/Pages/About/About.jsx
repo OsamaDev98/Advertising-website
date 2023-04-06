@@ -13,11 +13,11 @@ import {
   Connect,
 } from "../../export";
 
-const Contact = () => {
+const AboutCom = () => {
   return (
     <div>
       <Header />
-      <Hero title="تواصل معنا" />
+      <Hero title="من نحن" />
       <About />
       <Services />
       <Video />
@@ -30,4 +30,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default AboutCom;

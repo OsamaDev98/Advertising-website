@@ -1,15 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { SiMinds } from "react-icons/si";
 import { GiEarthAfricaEurope } from "react-icons/gi";
 import { FaConnectdevelop } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import "./Services.css";
 
 const Services = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   const serviceData = [
     {
       id: 0,
@@ -35,13 +30,37 @@ const Services = () => {
         "إليك ما يجب معرفته حول كيفية بدء عمل استشاري: كيفية العثور على العملاء وأعمال الخدمات والاستشارات",
       delay: "450",
     },
+    {
+      id: 3,
+      icon: <FaConnectdevelop />,
+      title: "دعايا",
+      description:
+        "إليك ما يجب معرفته حول كيفية بدء عمل استشاري: كيفية العثور على العملاء وأعمال الخدمات والاستشارات",
+      delay: "600",
+    },
+    {
+      id: 4,
+      icon: <SiMinds />,
+      title: "اعلان",
+      description:
+        "إليك ما يجب معرفته حول كيفية بدء عمل استشاري: كيفية العثور على العملاء وأعمال الخدمات والاستشارات",
+      delay: "750",
+    },
+    {
+      id: 5,
+      icon: <GiEarthAfricaEurope />,
+      title: "ارشادات",
+      description:
+        "إليك ما يجب معرفته حول كيفية بدء عمل استشاري: كيفية العثور على العملاء وأعمال الخدمات والاستشارات",
+      delay: "900",
+    },
   ];
   return (
     <section className="section service-section" id="services">
       <div className="services-container container">
         <div className="main-title-section">
           <h1 className="section-title">
-            نحن نقدم <span>افضل الحلول</span>
+            نحن نقدم <span>افضل الخدمات الرقمية</span>
           </h1>
           <p className="section-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit
@@ -49,15 +68,9 @@ const Services = () => {
         </div>
         <div className="services-cards">
           {serviceData?.map((item) => (
-            <div
-              className="service-card"
-              key={item.id}
-              data-aos="fade-right"
-              data-aos-delay={item.delay}
-            >
+            <div className="service-card" key={item.id}>
               <div className="service-img-container">
                 <span className="service-icon">{item.icon}</span>
-                <div className="service-shape"></div>
               </div>
               <h3 className="card-service-title">{item.title}</h3>
               <p className="card-service-text">{item.description}</p>

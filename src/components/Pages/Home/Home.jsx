@@ -10,6 +10,7 @@ import {
   Partners,
   ContactUs,
   Footer,
+  Connect,
 } from "../../export";
 
 const Home = () => {
@@ -17,12 +18,13 @@ const Home = () => {
     <div>
       {/* <UpperHeader /> */}
       <Header />
-      <Hero />
+      <Hero title="الخبراء" />
       <About />
       <Services />
       <Video />
       <Works />
       <Partners />
+      <Connect />
       <ContactUs />
       <Footer />
     </div>

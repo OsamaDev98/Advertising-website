@@ -1,0 +1,153 @@
+.connect-section {
+  background: var(--bg-sections);
+}
+.connect-section .connect-container {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+.connect-section .connect-container .connect-title-parts {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+.connect-section .connect-container .right-part__connect {
+  max-width: 600px;
+  width: 100%;
+}
+.connect-section .connect-container .right-part__connect form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+.connect-section .connect-container .right-part__connect form input,
+.connect-section .connect-container .right-part__connect form textarea {
+  font-size: 1.2rem;
+  height: 50px;
+  padding: 0 15px;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.connect-section .connect-container .right-part__connect form textarea {
+  padding: 15px;
+  height: 150px;
+  resize: none;
+}
+.connect-section
+  .connect-container
+  .right-part__connect
+  form
+  .connect-submit-btn {
+  background: var(--main-bg);
+  padding: 1rem;
+  color: #fff;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.connect-section
+  .connect-container
+  .right-part__connect
+  form
+  .connect-submit-btn
+  span {
+  margin-right: 10px;
+}
+.connect-section .connect-container .left-connect__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+}
+.connect-section .connect-container .connect-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: var(--trans);
+  -webkit-transition: var(--trans);
+  -moz-transition: var(--trans);
+  -ms-transition: var(--trans);
+  -o-transition: var(--trans);
+}
+.connect-section .connect-container .left-icon-container {
+  background: var(--main-bg);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.connect-section .connect-container .left-icon-container-2 {
+  background: #be63f9;
+}
+.connect-section .connect-container .left-icon-container-3 {
+  background: #fc573b;
+}
+.connect-section .connect-container .left-connect-icon {
+  font-size: 1.3rem;
+  color: #fff;
+}
+.connect-section .connect-container .connect-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.connect-section .connect-container .connect-details h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.connect-section .connect-container .connect-details p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: #565656;
+  max-width: 300px;
+}
+@media screen and (max-width: 992px) {
+  .connect-section .connect-container {
+    align-items: center;
+    gap: 6rem;
+    flex-direction: column-reverse;
+  }
+  .connect-section .connect-container .left-connect__content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .connect-section .connect-container .left-connect__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .connect-section .connect-container .connect-card {
+    max-width: 500px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

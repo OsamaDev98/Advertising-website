@@ -1,17 +1,22 @@
 .header {
-  position: relative;
+  position: absolute;
   display: block;
-  z-index: 1;
+  z-index: 600;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .header.active {
   position: sticky;
   inset: 0;
   z-index: 500;
+  top: 0;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
 }
 .header-wrapper {
   position: relative;
   display: block;
-  background-color: var(--gray-color);
   /* z-index: 1; */
 }
 .header .main-menu__wrapper-inner {
@@ -32,45 +37,27 @@
   position: relative;
   display: block;
   padding: 10px 0;
-  margin-left: 150px;
   z-index: 1;
 }
-.header .main-menu__right .logo::before {
-  content: "";
-  position: absolute;
-  top: 30%;
-  transform: translateX(-50%);
-  left: -70px;
-  width: 1px;
-  height: 50px;
-  background-color: #000;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-}
 .header .main-menu__right .logo a {
-  /* font-size: 1.5rem;
-  line-height: 34px;
-  font-weight: 500;
-  text-transform: capitalize;
-  color: #000;
-  font-weight: bold; */
   font-family: "Noto Nastaliq Urdu", serif;
-  color: var(--red-color);
+  color: #fff;
   font-weight: 700;
   font-size: 2rem;
 }
-.header .main-menu__right .main-menu {
+.header .main-menu__right .logo a.active {
+  color: #000;
+}
+.header .main-menu {
   position: relative;
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-.header .main-menu__right .main-menu a {
+.header .main-menu a {
   font-size: 1.3rem;
-  color: #000;
-  font-weight: 500;
+  color: #fff;
+  font-weight: 600;
   position: relative;
   transition: var(--trans);
   -webkit-transition: var(--trans);
@@ -78,11 +65,14 @@
   -ms-transition: var(--trans);
   -o-transition: var(--trans);
 }
-.header .main-menu__right .main-menu a.active {
-  color: var(--red-color);
+.header .main-menu a.active {
+  color: #000;
 }
-.header .main-menu__right .main-menu a:hover {
-  color: var(--red-color);
+.header .main-menu a.active:hover {
+  color: var(--text-gray-color);
+}
+.header .main-menu a:hover {
+  color: #ccc;
 }
 .header .main-menu__left {
   position: relative;
@@ -101,7 +91,7 @@
   border: 1px solid #e1e1e1;
   border-radius: 50%;
   font-size: 2rem;
-  color: #090909;
+  color: #fff;
   cursor: pointer;
   transition: var(--trans);
   -webkit-transition: var(--trans);
@@ -112,6 +102,9 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+.header .main-menu__left .search-btn.active {
+  color: #000;
 }
 .header .main-menu__left .search-btn:hover {
   color: #fff;
@@ -188,9 +181,16 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+.header .mobile-mode {
+  margin-left: 2rem;
+}
+.header .mobile-mode.active {
+  color: #000;
+}
 .header .mobile-mode,
 .mobile-mode-close {
-  font-size: 1.5rem;
+  color: #fff;
+  font-size: 1.6rem;
   cursor: pointer;
   display: none;
   transition: var(--trans);
@@ -224,7 +224,7 @@
   .header .mobile-mode {
     display: flex;
   }
-  .header .main-menu__right .main-menu {
+  .header .main-menu {
     position: absolute;
     top: 0;
     height: 100vh;
@@ -244,10 +244,13 @@
     -o-transition: var(--trans);
     z-index: 50;
   }
-  .header .main-menu__right .main-menu li a {
+  .header .main-menu li a {
     color: #fff;
   }
-  .header .main-menu__right .main-menu .mobile-mode-close {
+  .header .main-menu a.active {
+    color: #fff;
+  }
+  .header .main-menu .mobile-mode-close {
     position: absolute;
     display: flex;
     font-size: 1.5rem;
@@ -255,7 +258,7 @@
     left: 2rem;
     top: 2rem;
   }
-  .header .main-menu__right .main-menu.active {
+  .header .main-menu.active {
     clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
   }
   .header .overlay-mobile-mode.active {
@@ -264,17 +267,13 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .header .main-menu__left {
+  .header .main-menu__left .search-btn {
     display: none;
   }
-  .header .main-menu__right .logo::before {
+  .header .main-menu__left .main-btn {
     display: none;
   }
   .header .main-menu__right .logo {
     margin-left: 0;
-  }
-  .header .main-menu__right {
-    width: 100%;
-    justify-content: space-between;
   }
 }
